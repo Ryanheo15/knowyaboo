@@ -14,14 +14,6 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
-.updated_body {
-    background: #5e2e2b !important;
-}
-
-.normal_body {
-    background: #eab5a0;
-}
-
 /* Index ------------------------------------------------------------------------------------------------------------ */
 main {
     height: 100vh;
@@ -45,7 +37,7 @@ main {
 
 .title-section {
     position: absolute;
-    top: 45%;
+    top: 37.5%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 100;
@@ -60,8 +52,8 @@ main {
     text-transform: uppercase;
     letter-spacing: 2px;
     border: 1px solid #d8a793;
-    padding-left: 5%;
-    padding-right: 5%;
+    padding-left: 10%;
+    padding-right: 10%;
     font-weight: 300;
     font-family: 'Montserrat', sans-serif;
 }
@@ -101,6 +93,15 @@ main {
     padding-right: 15px;
 }
 
+.controls-sections {
+    position: absolute;
+    bottom: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 101;
+    width: 50%;
+}
+
 /* shuffle buttons */
 .shuffle_btn {
     border-radius: 7px;
@@ -110,7 +111,6 @@ main {
     letter-spacing: 5px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
-    padding: 10px 6%;
 }
 
 .shuffle_btn:hover {
@@ -235,4 +235,46 @@ input:checked + .slider:before {
     font-size: 50px;
     font-family: 'Cormorant Garamond', serif;
     color: white;
+}
+
+@media (max-width: 575.98px) {
+    #ageConfirmationText {
+        font-size: 32px;
+        font-family: 'Cormorant Garamond', serif;
+        color: white;
+    }
+
+    .heart {
+        width: 100%;
+    }
+
+    .question_section {
+        font-size: 40px;
+    }
+
+    .title-section {
+        top: 30%;
+        left: 20%;
+        transform: translate(-12.5%);
+    }
+
+    .question_main .title-section {
+        top: 25%;
+        margin-top: 5%;
+    }
+
+    .controls-sections {
+        bottom: 12.5%;
+        width: 100%;
+    }
+
+    .age_confirm_sec {
+        top: 25%;
+        left: 20%;
+        transform: translate(-12.5%);
+    }
+
+    .heading {
+        font-size: 50px;
+    }
 }
