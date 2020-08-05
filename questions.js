@@ -1,10 +1,10 @@
 //QUESTIONS database
 questions_bank = [
-  "question 1: Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur?",
+    "What is your most used curse word?",
 
-  "question 2: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua?",
+    "What is your go-to activity on a rainy day?",
 
-  "question 3: Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum?"
+    "What is your go-to playlist vibe for a summer day?"
 ]
 
 //SELECTORS
@@ -12,10 +12,19 @@ let shuffle = document.querySelector(".shuffle_btn");
 let questions = document.querySelector(".question_section");
 
 //Event Listeners
+window.onload = function() {
+    let random_num = Math.floor(Math.random() * 3);
+    questions.textContent = questions_bank[random_num];
+}
+
 shuffle.addEventListener("click", () => {
-  let random_num = Math.floor(Math.random() *3);
+    let random_num = Math.floor(Math.random() * 3);
 
-  let question = questions_bank[random_num];
+    // Prevent duplicate questions
+    while (questions.textContent === questions_bank[random_num])
+    {
+        random_num = Math.floor(Math.random() * 3);
+    }
 
-  questions.textContent = question;
+    questions.textContent = questions_bank[random_num];
 })

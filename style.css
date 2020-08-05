@@ -1,154 +1,238 @@
-/* INDEX ------------------------------------------------------------------------------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=Montserrat:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&family=Neuton:wght@800&display=swap');
+
+/* Global styles ---------------------------------------------------------------------------------------------------- */
+.heading {
+    color: white;
+    font-size: 67px;
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 800;
+    text-align: center;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.updated_body {
+    background: #5e2e2b !important;
+}
+
+.normal_body {
+    background: #eab5a0;
+}
+
+/* Index ------------------------------------------------------------------------------------------------------------ */
 main {
-  height:100vh;
-  background-color:#eab5a0;
+    height: 100vh;
+    background-color: #eab5a0;
 }
 
-/* logo */
 .logo {
-  height:250px;
-  width:300px;
-  z-index:100;
+    height: 250px;
+    width: 300px;
+    z-index: 100;
 }
 
-/* Heart pic */
 .heart {
-  height:700px;
-  width:600px;
-  position:relative;
-  top:-150px;
-  opacity:0.3;
-  z-index:5;
+    height: 700px;
+    width: 600px;
+    position: relative;
+    top: -150px;
+    opacity: 0.3;
+    z-index: 5;
 }
 
-/* title-section */
 .title-section {
-  position:absolute;
-  top:45%;
-  left:50%;
-  transform:translate(-50%,-50%);
-  z-index:100;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
 }
 
-/* boo button */
+/* boo buttons */
 .boo_btn {
-  background-color:#d8a793;
+    background: #D8A793;
+    border-radius: 8px;
+    font-size: 18px;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border: 1px solid #d8a793;
+    padding-left: 5%;
+    padding-right: 5%;
+    font-weight: 300;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .boo_btn:hover {
-  background-color:#ffffff;
-  color:#d8a793 !important;
+    background-color: #ffffff;
+    color: #d8a793 !important;
+    border: 1px solid #fff;
 }
 
 /* Age Confirmation ------------------------------------------------------------------------------------------------- */
 .age_btn {
-  padding:0;
+    border-radius: 12px;
+    font-size: 16px;
+    font-family: 'Montserrat Light', serif;
+    letter-spacing: 8px;
+    background: #ffffff00;
+    border: none;
+    color: white;
 }
+
 .age_btn:hover {
-  border-bottom:4px solid white;
+    font-weight: 600;
 }
 
-/* question ----------------------------------------------------------------------------------------------------------- */
-/* shuffle */
-.shuffle {
-  background-color:#d8a793;
-  padding-left:60px;
-  padding-right:60px;
+/* Question pages --------------------------------------------------------------------------------------------------- */
+.question_section {
+    padding-top: 4%;
+    padding-left: 15px;
+    display: block;
+    color: white;
+    font-size: 48px;
+    font-family: 'Neuton', serif;
+    text-align: center;
+    margin: 0 auto 7%;
+    font-weight: 800;
+    padding-right: 15px;
 }
 
-/* switch */
-/* The switch - the box around the slider */
+/* shuffle buttons */
+.shuffle_btn {
+    border-radius: 7px;
+    font-size: 20px;
+    color: #FFFFFF;
+    background: #d8a793;
+    letter-spacing: 5px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    padding: 10px 6%;
+}
+
+.shuffle_btn:hover {
+    background: #ba8d80;
+    color: #fff;
+}
+
+/* Switch (box around slider) */
+.custom-control {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 32px;
+    max-width: 100%;
+    margin-bottom: 5px;
+    font-weight: 700;
+}
+
 .switch {
-  position: relative;
-  display: inline-block;
-  width: 60px;
-  height: 34px;
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 32px;
 }
 
-/* Hide default HTML checkbox */
+/* - Hide default HTML checkbox */
 .switch input {
-  opacity: 0;
-  width: 0;
-  height: 0;
+    opacity: 0;
+    width: 0;
+    height: 0;
 }
 
-/* The slider */
+/* Slider */
 .slider {
-  position: absolute;
-  cursor: pointer;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  border:1px solid white;
-  -webkit-transition: .4s;
-  transition: .4s;
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 1px solid white;
+    -webkit-transition: .4s;
+    transition: .4s;
 }
 
 .slider:before {
-  position: absolute;
-  content: "";
-  height: 26px;
-  width: 26px;
-  left: 4px;
-  bottom: 4px;
-  background-color: white;
-  -webkit-transition: .4s;
-  transition: .4s;
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    left: 4px;
+    bottom: 5px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
 }
 
 input:checked + .slider {
-
-}
-
-input:focus + .slider {
-  box-shadow: 0 0 1px #2196F3;
+    background-color: #ba8d80;
 }
 
 input:checked + .slider:before {
-  -webkit-transform: translateX(26px);
-  -ms-transform: translateX(26px);
-  transform: translateX(26px);
+    -webkit-transform: translateX(30px);
+    -ms-transform: translateX(30px);
+    transform: translateX(30px);
 }
 
-/* Rounded sliders */
+/* - Rounded sliders */
 .slider.round {
-  border-radius: 34px;
+    border-radius: 20px;
 }
 
 .slider.round:before {
-  border-radius: 50%;
+    border-radius: 50%;
 }
 
-/* FULL SCREEN MODAL */
-.modal {
-  width:100vw !important;
-  height:100vh !important;
-  opacity:0.89;
+/* XXX sauce text */
+.xxxSauceText {
+    margin-top: 3px;
+    font-size: 16px;
+    font-weight: 700;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 2px;
 }
+
+/* Fullscreen modal */
+.modal {
+    width: 100vw !important;
+    height: 100vh !important;
+    opacity: 0.89;
+}
+
 .modal-dialog {
-  width: 100vw !important;
-  height: 100vh !important;
-  margin: 0;
-  padding: 0;
+    width: 100vw !important;
+    height: 100vh !important;
+    margin: 0;
+    padding: 0;
 }
 
 .modal-content {
-  width: 100vw !important;
-  height: 100vh !important;
-  border-radius: 0;
+    width: 100vw !important;
+    height: 100vh !important;
+    border-radius: 0;
+    background-color: #c37e7cc4;
 }
 
 .modal-body {
-  width: 100% !important;
-  height: 100vh !important;
-  background-color:#ba8d80;
-  opacity:0.89;
+    width: 100% !important;
+    height: 100vh !important;
+    opacity: 0.89;
 }
 
 .age_confirm_sec {
-  position:absolute;
-  top:45%;
-  left:50%;
-  transform:translate(-50%,-50%);
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#ageConfirmationText {
+    font-size: 50px;
+    font-family: 'Cormorant Garamond', serif;
+    color: white;
 }
