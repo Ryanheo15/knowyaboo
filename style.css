@@ -1,0 +1,154 @@
+/* INDEX ------------------------------------------------------------------------------------------------- */
+main {
+  height:100vh;
+  background-color:#eab5a0;
+}
+
+/* logo */
+.logo {
+  height:250px;
+  width:300px;
+  z-index:100;
+}
+
+/* Heart pic */
+.heart {
+  height:700px;
+  width:600px;
+  position:relative;
+  top:-150px;
+  opacity:0.3;
+  z-index:5;
+}
+
+/* title-section */
+.title-section {
+  position:absolute;
+  top:45%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  z-index:100;
+}
+
+/* boo button */
+.boo_btn {
+  background-color:#d8a793;
+}
+
+.boo_btn:hover {
+  background-color:#ffffff;
+  color:#d8a793 !important;
+}
+
+/* Age Confirmation ------------------------------------------------------------------------------------------------- */
+.age_btn {
+  padding:0;
+}
+.age_btn:hover {
+  border-bottom:4px solid white;
+}
+
+/* question ----------------------------------------------------------------------------------------------------------- */
+/* shuffle */
+.shuffle {
+  background-color:#d8a793;
+  padding-left:60px;
+  padding-right:60px;
+}
+
+/* switch */
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border:1px solid white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+/* FULL SCREEN MODAL */
+.modal {
+  width:100vw !important;
+  height:100vh !important;
+  opacity:0.89;
+}
+.modal-dialog {
+  width: 100vw !important;
+  height: 100vh !important;
+  margin: 0;
+  padding: 0;
+}
+
+.modal-content {
+  width: 100vw !important;
+  height: 100vh !important;
+  border-radius: 0;
+}
+
+.modal-body {
+  width: 100% !important;
+  height: 100vh !important;
+  background-color:#ba8d80;
+  opacity:0.89;
+}
+
+.age_confirm_sec {
+  position:absolute;
+  top:45%;
+  left:50%;
+  transform:translate(-50%,-50%);
+}
