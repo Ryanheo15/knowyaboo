@@ -21,8 +21,8 @@ main {
 }
 
 .logo {
-    height: 250px;
-    width: 300px;
+    height: auto;
+    width: 20vw;
     z-index: 100;
 }
 
@@ -76,7 +76,7 @@ main {
 }
 
 .age_btn:hover {
-    font-weight: 600;
+    text-decoration: underline;
 }
 
 /* Question pages --------------------------------------------------------------------------------------------------- */
