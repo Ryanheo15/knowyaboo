@@ -244,6 +244,10 @@ input:checked + .slider:before {
         color: white;
     }
 
+    .logo {
+        width: 75%;
+    }
+
     .heart {
         width: 100%;
     }
@@ -276,5 +280,11 @@ input:checked + .slider:before {
 
     .heading {
         font-size: 50px;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .logo {
+        width: 50%;
     }
 }
